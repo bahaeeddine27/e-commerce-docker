@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
   res.send('Hello from the backend!');
 });
 
+app.get('/test', (req, res) => {
+  res.send('Hot reload is working!');
+});
+
 app.listen(port, () => {
   console.log(`Backend server is running on http://localhost:${port}`);
 });
